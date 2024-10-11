@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f5f5f5"
@@ -26,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/bnt_cam_ongoing"
         android:layout_width="@dimen/dp_30"
         android:layout_height="@dimen/dp_30"
         app:layout_constraintBottom_toTopOf="@+id/name"
@@ -39,13 +40,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_20"
+        android:text="THEM PROJECT"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/avatar"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/anchor_1"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="THEM PROJECT"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/anchor_2"
@@ -56,13 +58,14 @@
         app:layout_constraintGuide_percent="1.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/anchor_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_percent="0.2"
+        app:layout_constraintGuide_percent="0.61"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -156,8 +159,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:inputType="text"
                 android:hint="1234-1234-1234"
+                android:inputType="text"
                 android:textAlignment="viewEnd"
                 android:textColor="#585858"
                 android:textSize="16sp" />
@@ -191,8 +194,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:inputType="date"
                 android:hint="1234-1234-1234"
+                android:inputType="date"
                 android:textAlignment="viewEnd"
                 android:textColor="#585858"
                 android:textSize="16sp" />
@@ -227,50 +230,50 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="taint.33198@gmail.com"
-                android:textAlignment="viewEnd"
                 android:inputType="number"
+                android:textAlignment="viewEnd"
                 android:textColor="#585858"
                 android:textSize="16sp" />
         </LinearLayout>
 
-<!--        <androidx.appcompat.widget.AppCompatImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="1dp"-->
-<!--            android:layout_margin="10dp"-->
-<!--            android:alpha="0.5"-->
-<!--            android:background="#585858" />-->
+        <!--        <androidx.appcompat.widget.AppCompatImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            android:alpha="0.5"-->
+        <!--            android:background="#585858" />-->
 
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="10dp"-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            android:layout_marginEnd="10dp"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:orientation="horizontal">-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:orientation="horizontal">-->
 
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_weight="1"-->
-<!--                android:text="PostalCode"-->
-<!--                android:textColor="#0090ff"-->
-<!--                android:textSize="18sp" />-->
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:text="PostalCode"-->
+        <!--                android:textColor="#0090ff"-->
+        <!--                android:textSize="18sp" />-->
 
-<!--            <EditText-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_weight="1"-->
-<!--                android:hint="10000"-->
-<!--                android:textAlignment="viewEnd"-->
-<!--                android:textColor="#585858"-->
-<!--                android:textSize="16sp" />-->
-<!--        </LinearLayout>-->
+        <!--            <EditText-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:hint="10000"-->
+        <!--                android:textAlignment="viewEnd"-->
+        <!--                android:textColor="#585858"-->
+        <!--                android:textSize="16sp" />-->
+        <!--        </LinearLayout>-->
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_edit_profile"
+        android:id="@+id/btn_saving_ongoing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -285,4 +288,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linear_layout" />
+
+    <ImageView
+        android:id="@+id/btn_edit_ongoing"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit" />
 </androidx.constraintlayout.widget.ConstraintLayout>
