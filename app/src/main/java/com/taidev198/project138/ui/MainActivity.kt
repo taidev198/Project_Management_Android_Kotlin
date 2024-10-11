@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.taidev198.project138.R
 import com.taidev198.project138.databinding.ActivityMainBinding
+import com.taidev198.project138.ui.home.HomeFragment
 import com.taidev198.project138.utils.base.BaseActivity
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
@@ -25,11 +26,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     }
 
     override fun inflateBinding(layoutInflater: LayoutInflater): ActivityMainBinding {
-
+        return ActivityMainBinding.inflate(layoutInflater)
     }
 
     override fun initView() {
-
+        setNextFragment(HomeFragment.newInstance())
     }
 
     override fun initData() {

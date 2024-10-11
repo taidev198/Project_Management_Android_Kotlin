@@ -8,7 +8,6 @@ interface HomeContract {
     }
 
     interface View{
-        fun onGetOngoings(listOngoing: List<Ongoing>)
         fun onGetOngoingsSuccess(listOngoing: List<Ongoing>)
         fun onError(e: String)
     }
