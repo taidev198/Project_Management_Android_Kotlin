@@ -38,7 +38,7 @@ OnItemClickListener{
         homePresenter =
             HomePresenter(OngoingRepository.getInstance(
                 OngoingDataSourceImpl.getInstance(context)
-            ))
+            ), this)
         homePresenter?.getOngoings()
     }
 
